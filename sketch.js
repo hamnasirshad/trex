@@ -44,7 +44,7 @@ function draw() {
   background(180);
   text("Score: "+score,500,50)
   score = score+Math.round(getFrameRate()/60);
-  if(keyDown("space")) {
+  if(keyDown("space") && trex.y>156) {
     trex.velocityY = -10;
   }
   
